@@ -1,0 +1,209 @@
+
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="style..css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="prism-atom-dark.css"
+    type="text/css"
+    media="screen"
+  />
+
+  <script type="text/javascript" src="prism.js"></script>
+  <script type="text/javascript" src="prism.ruby.js"></script>
+
+  <title>Carriane Linzer</title>
+   <meta name="description" content="Carriane Linzer is a professional
+        software engineer specializing in full-stack development.
+        He has extensive experience with Ruby, Rails, JavaScript,
+        and building web applications.">
+
+
+  </head>
+    <body>
+       
+
+    
+     <div class ="about-container">
+      <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#code-samples" class="nav-link">Code Samples</a></li>
+        <li><a href="apps.html" class="nav-link">Web Apps</a></li>
+        <li><a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</a></li>
+        <li class="hire-me"><a href="#hire-me" class="nav-link">HIRE ME</a></li>
+     </ul>
+     
+       <div class="about" id="about">
+        
+
+
+        <h1>Carriane Linzer</h1>
+        
+        <h2>Hello! Welcome to my Portfolio</h2>
+        <hr class="grey"/>
+        <p class="bio">My name is Carriane Linzer, I am currently working with people with disabilities and programming in my free time. I completed the fullstack Certification course for Ruby on Rails with University of Texas @ Austin, and I aspire 
+          to help companies and startups with their websites. I have always loved math and problem solving. I found Web development to be the perfect balance of my favorites.
+          I love tutoring high schoolers in algebra, geometry, physical science, and physics in my spare time as well. Family and Friends are important to me and my faith is an aspect of my life that has
+          kept me grounded and given me the courage to pursue my goals.</p> 
+        </p>
+       </div>
+      </div>
+
+  <div class="color-grey">   
+    <h3 id="code-samples">Code Snippets</h3>
+    
+    <hr class="yellow"/>
+
+    <div class ="box">
+      <h4>Temperature Conversion</h4>
+      <p>
+        This Ruby program will prompt the user for a temperature
+        in degrees Celsius and let the user know what the
+        corresponding temperature is in Fahrenheit.
+      </p>
+    </div>
+
+    <div class="box">
+      <pre><code class="language-ruby">
+      puts &quot;Enter degrees in Celsius: &quot;
+      num = gets.to_i
+
+      val = (1.8 * num) + 32
+      puts &quot;It is #{val.to_i} degrees Fahrenheit!&quot;
+      </code></pre>
+    </div>
+
+    <br class ="clear" />  
+
+    <div class ="box">
+      <pre><code class="language-ruby">
+      puts &quot;Enter a number&quot;
+      user_number = gets.to_i
+      last_digit = user_number % 10 
+
+      if  last_digit == 1 &amp;&amp; user_number != 11
+      puts &quot;#{user_number}st place&quot;
+      elsif  last_digit == 2 &amp;&amp; user_number != 12
+      puts  &quot;#{user_number}nd place&quot;
+      elsif last_digit  == 3 &amp;&amp; user_number != 13
+      puts &quot;#{user_number}rd place&quot;
+      elsif last_digit == 11 || 12 || 13 
+      puts &quot;#{user_number}th place&quot;
+      else 
+      puts &quot;#{user_number}th place&quot;
+      end
+      </code></pre>
+    </div>
+
+    <div class="box">
+        <h4>Ordinal Challenge</h4>
+        <p>
+          This Ruby program will convert a plain number 
+          to the ordinal of the number. So for example,
+          if the user enters 2, it will display 2nd, if
+          the user enters 3, it will display 3rd, etc. 
+        </p>
+    </div> 
+
+    <br class ="clear" />
+
+    <div class ="box">
+      <h4>Foobar</h4>
+        <p>
+          This Ruby program is an adaptation og a classic technical
+          interview problem which displays sequences of the Foobar pattern.
+        </p>
+    </div>
+
+    <div class="box">
+        <pre><code class="language-ruby">
+        puts &quot;How many numbers do you want to see?&quot;
+        input = gets.chomp.to_i
+
+        numbers = []
+        (1..input).each do |num|
+
+        if num % 3 == 0 &amp;&amp; num % 5 == 0
+        numbers.push(&quot;foobar&quot;)
+        elsif num % 3 == 0 
+        numbers.push(&quot;foo&quot;)
+        elsif num % 5 == 0
+        numbers.push(&quot;bar&quot;)
+        else 
+        numbers.push(num)
+        end
+        end
+        puts numbers
+        </code></pre>
+    </div>
+  
+    <br class ="clear" />
+
+  
+    <br class="clear" />
+
+    <h3 id="skills-and-tools">Skills &amp; Tools</h3>
+    <hr class="yellow" />
+     <p class="skills-and-tools">
+      Carriane has developed proficiency and expertise
+      in the following programming languages and
+      comfort with the following tools.
+    </p>
+  <div class="icons">
+    <img src="skills-and-tools/github.png" class="icon" />
+    <img src="skills-and-tools/rubocop.png"  class="icon" />
+    <img src="skills-and-tools/trello.png"  class="icon" />
+    <img src="skills-and-tools/slack.png" class="icon" />
+    <img src="skills-and-tools/codeship.png" class="icon" />
+
+
+    <br class="clear" />
+    <img src="skills-and-tools/skills.png" class="icon" /> 
+
+  </div>
+
+  <div class="contact-me" id="hire-me">
+    <h3 class="contact-headline">Contact</h3>
+    <hr class="yellow" />
+    <p class="contact-info">
+      Currently entertaining new opportunities.
+      Please get in touch via email:
+      
+    </p>
+
+    <p>
+      <a href="mailto:my@email.com" class="contact-link">
+        carrianelinzer@icloud.com
+      </a>
+    <br /><br />
+    <font color="white">Other Links:
+    <br /><br />
+    <b class="icons">
+       LinkedIn&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GitHub</font>
+    </b>
+    <br />
+     <a href="https://www.linkedin.com/in/carriane-linzer-36529216a/" class="contact-link">
+      <img src="LinkedIn.png" />
+     </a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="https://github.com/Yonttee" class="contact-link">
+      <img src="GitHubLink.png" />
+     </a>
+    </font>
+  </p>
+  </div>
+</div>
+ 
+  </body>
+  </html>
+  
+
+  
+ 
+ 
+ 
+ 
+ 
